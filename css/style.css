@@ -1,0 +1,138 @@
+/* VARIABLES */
+:root {
+    --dark-color: #313131;
+    --light-color: #F9F9F9;
+    --spotlight-color: #FFB266;
+    --font-primary: 'Times New Roman', Times, serif;
+    --font-secondary: 'Arial', Helvetica, sans-serif;
+    --transition: all 0.3s linear;
+    --radius: 0.3rem;
+    --spacing: 0.3rem;
+}
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--dark-color);
+    color: var(--light-color);
+    line-height: 1.5;
+    font-family: var(--font-secondary);
+}
+
+h1, h2, h3, h4 {
+    text-transform: capitalize;
+    word-spacing: var(--spacing);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+p {
+    word-spacing: var(--spacing);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.spotlight {
+    color: var(--spotlight-color);
+}
+
+/* HEADER */
+.navigation {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navigation .logo {
+    text-transform: uppercase;
+}
+
+.nav-bar {
+    margin-top: 1rem;
+}
+
+.nav-bar .nav-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: var(--transition);
+    cursor: pointer;
+    border-radius: var(--radius);
+}
+
+.nav-bar .nav-link:hover {
+    background: var(--spotlight-color);
+    color: var(--light-color);
+}
+
+@media screen and (min-width: 720px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.6rem;
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+    
+    .navigation {
+        padding: 2.5rem;
+    }
+
+    .logo {
+        position: absolute;
+        top: 25%;
+        left: 0;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 25%;
+        right: 1rem;
+    }
+
+    .nav-link {
+        margin-left: 1rem;
+    }
+
+}

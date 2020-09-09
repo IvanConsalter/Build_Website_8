@@ -47,6 +47,7 @@ h4 {
 
 p {
     word-spacing: var(--spacing);
+    margin: 1rem 0;
 }
 
 ul {
@@ -68,6 +69,10 @@ img {
     color: var(--spotlight-color);
 }
 
+.title {
+    font-family: var(--font-primary);
+}
+
 .sub-title {
     font-family: var(--font-primary);
     margin: 1rem 0;
@@ -80,6 +85,10 @@ img {
 
 .clearfix {
     clear: both;
+}
+
+.round {
+    border-radius: 50%;
 }
 
 /* HEADER */
@@ -139,10 +148,6 @@ img {
     text-align: center;
 }
 
-.showcase-text .title {
-    font-family: var(--font-primary);
-}
-
 .showcase-text p {
     margin: 2rem 0;
 }
@@ -188,6 +193,46 @@ img {
 .icon {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+}
+
+/* ABOUT */
+.about {
+    padding: 1rem;
+    background: var(--light-color);
+    color: var(--dark-color);
+}
+
+.about img {
+    width: 400px;
+    height: 400px;
+    margin: 2rem auto;
+}
+
+/* GUESTS */
+.guests {
+    background: url(../img/guests-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+}
+
+.guests .sub-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.guest-comment {
+    margin: 0 auto 3rem auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    width: 80%;
+}
+
+.guests img {
+    width: 120px;
+    height: 120px;
+    margin: 1rem auto;
 }
 
 /* FOOTER */
@@ -260,5 +305,20 @@ footer p {
     .box {
         float: left;
         width: 33.3%;
+    }
+
+    .about-text {
+        float: left;
+        width: 40%;
+        padding: 2rem 0 0 3rem;
+    }
+    
+    .guest-comment {
+        height: 160px;
+    }
+
+    .guests img {
+        float: left;
+        margin: 0 2rem;
     }
 }
